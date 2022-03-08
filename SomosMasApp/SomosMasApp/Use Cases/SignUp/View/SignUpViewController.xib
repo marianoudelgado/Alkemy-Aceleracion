@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="SomosMasApp" customModuleProvider="target">
+            <connections>
+                <outlet property="confirmPasswordError" destination="mvs-Gz-vTT" id="eNl-VN-p2N"/>
+                <outlet property="confirmPasswordField" destination="yLS-6Q-ydh" id="zUx-Tj-MWh"/>
+                <outlet property="createAccountButton" destination="Ezg-0s-F1u" id="7fm-8l-hrB"/>
+                <outlet property="mailAlreadyRegister" destination="5AJ-yP-O1d" id="y7S-Ez-6Za"/>
+                <outlet property="mailError" destination="fRR-fZ-yXD" id="oiU-VY-Nd1"/>
+                <outlet property="mailField" destination="h7a-R8-ptT" id="cX6-OQ-etL"/>
+                <outlet property="nameError" destination="wAJ-jW-GWW" id="0cW-uT-H8F"/>
+                <outlet property="nameField" destination="WCc-1P-lpi" id="NBO-eM-rP5"/>
+                <outlet property="passwordError" destination="sLT-4X-GHl" id="wD6-UA-1U0"/>
+                <outlet property="passwordField" destination="Aru-LW-Ygn" id="GjK-qe-r2Q"/>
+                <outlet property="phoneError" destination="oFm-l7-NiL" id="hRC-Mq-4Lv"/>
+                <outlet property="phoneField" destination="SSd-xa-30m" id="rj9-Gt-bBC"/>
+                <outlet property="stackScrollViewConstraint" destination="deO-Ov-Iht" id="cBC-6H-hed"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="cja-39-wCD">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H3a-g4-cSg">
+                    <rect key="frame" x="44" y="0.0" width="326" height="1200"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Cmv-Us-oue">
+                            <rect key="frame" x="0.0" y="0.0" width="326" height="695"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="LOGO-SOMOS MAS" translatesAutoresizingMaskIntoConstraints="NO" id="V0A-iC-J4Y">
+                                    <rect key="frame" x="20" y="0.0" width="286" height="200"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="xyF-1z-qBj"/>
+                                    </constraints>
+                                </imageView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Loo-Dv-SP5" userLabel="Name">
+                                    <rect key="frame" x="20" y="220" width="286" height="45"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WCc-1P-lpi" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="286" height="45"/>
+                                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="9iI-qR-wE2"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="        Nombre incompleto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAJ-jW-GWW">
+                                            <rect key="frame" x="0.0" y="0.0" width="286" height="0.0"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.88538024479999999" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gtu-mK-yrJ" userLabel="Mail">
+                                    <rect key="frame" x="20" y="285" width="286" height="45"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h7a-R8-ptT" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="286" height="45"/>
+                                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="JCb-38-7lP"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="        E-mail incorrecto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRR-fZ-yXD">
+                                            <rect key="frame" x="0.0" y="0.0" width="286" height="0.0"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.88538024479999999" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="        E-mail ya registrado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5AJ-yP-O1d">
+                                            <rect key="frame" x="0.0" y="0.0" width="286" height="0.0"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.88538024479999999" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pkk-P1-dbJ" userLabel="Phone">
+                                    <rect key="frame" x="20" y="350" width="286" height="45"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Teléfono" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SSd-xa-30m" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="286" height="45"/>
+                                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="Tq6-o7-qwo"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="        Teléfono invalido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFm-l7-NiL">
+                                            <rect key="frame" x="0.0" y="0.0" width="286" height="0.0"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.88538024479999999" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="2Em-K0-koV" userLabel="Password">
+                                    <rect key="frame" x="20" y="415" width="286" height="45"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aru-LW-Ygn" userLabel="Contraseña" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="286" height="45"/>
+                                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="5ts-Nt-gWa"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="        Contraseña incorrecta" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLT-4X-GHl">
+                                            <rect key="frame" x="0.0" y="0.0" width="286" height="0.0"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.88538024479999999" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gLV-do-44Y" userLabel="ConfirmPassword">
+                                    <rect key="frame" x="20" y="480" width="286" height="45"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirmar Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yLS-6Q-ydh" customClass="UnderlinedtextField" customModule="SomosMasApp" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="286" height="45"/>
+                                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="eBt-Kc-wGa"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="        Las contraseñas no coinciden" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvs-Gz-vTT">
+                                            <rect key="frame" x="0.0" y="0.0" width="286" height="0.0"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.88538024479999999" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJF-ib-L9V">
+                                    <rect key="frame" x="20" y="545" width="286" height="150"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ezg-0s-F1u">
+                                            <rect key="frame" x="68" y="25" width="150" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="07Q-ZG-Bgv"/>
+                                                <constraint firstAttribute="width" constant="150" id="iVO-V3-RJx"/>
+                                            </constraints>
+                                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="gray" title="Crear Cuenta">
+                                                <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <action selector="createAccountAction:" destination="-1" eventType="touchUpInside" id="BGE-fJ-dtf"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="150" id="FCX-Mi-Cm5"/>
+                                        <constraint firstItem="Ezg-0s-F1u" firstAttribute="top" secondItem="fJF-ib-L9V" secondAttribute="top" constant="25" id="bDj-Qr-PeL"/>
+                                        <constraint firstItem="Ezg-0s-F1u" firstAttribute="centerX" secondItem="fJF-ib-L9V" secondAttribute="centerX" id="kmn-pI-trf"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Cmv-Us-oue" firstAttribute="width" secondItem="H3a-g4-cSg" secondAttribute="width" id="2gs-oj-pHS"/>
+                        <constraint firstItem="Cmv-Us-oue" firstAttribute="leading" secondItem="H3a-g4-cSg" secondAttribute="leading" id="63q-aB-t8h"/>
+                        <constraint firstAttribute="bottom" secondItem="Cmv-Us-oue" secondAttribute="bottom" constant="20" id="aic-SG-TzX"/>
+                        <constraint firstAttribute="trailing" secondItem="Cmv-Us-oue" secondAttribute="trailing" id="hiQ-39-2k7"/>
+                        <constraint firstItem="Cmv-Us-oue" firstAttribute="top" secondItem="H3a-g4-cSg" secondAttribute="top" id="msO-NU-0Oz"/>
+                        <constraint firstItem="Cmv-Us-oue" firstAttribute="width" secondItem="H3a-g4-cSg" secondAttribute="width" id="xMd-4I-U3T"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="H3a-g4-cSg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7Fc-4v-oiG"/>
+                <constraint firstItem="cja-39-wCD" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="Cvr-qe-jl7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="H3a-g4-cSg" secondAttribute="trailing" id="D9m-rW-HdJ"/>
+                <constraint firstItem="H3a-g4-cSg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Dk4-Jf-MIh"/>
+                <constraint firstItem="cja-39-wCD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="QbI-de-5V8"/>
+                <constraint firstAttribute="bottom" secondItem="cja-39-wCD" secondAttribute="bottom" id="cIf-Pb-pb9"/>
+                <constraint firstAttribute="bottom" secondItem="H3a-g4-cSg" secondAttribute="bottom" id="deO-Ov-Iht" userLabel="anchorBottomScroll"/>
+                <constraint firstItem="cja-39-wCD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iRH-XE-8lp"/>
+                <constraint firstItem="H3a-g4-cSg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="rr5-Uk-Lec"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="104.34782608695653" y="-780.13392857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Background" width="1284" height="2778"/>
+        <image name="LOGO-SOMOS MAS" width="200" height="200"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

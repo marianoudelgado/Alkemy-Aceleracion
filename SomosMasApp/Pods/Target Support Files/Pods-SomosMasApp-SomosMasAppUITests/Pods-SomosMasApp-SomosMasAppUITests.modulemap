@@ -1,0 +1,6 @@
+framework module Pods_SomosMasApp_SomosMasAppUITests {
+  umbrella header "Pods-SomosMasApp-SomosMasAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

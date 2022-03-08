@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NewsCollectionViewCell" id="gTV-IL-0wX" customClass="NewsCollectionViewCell" customModule="SomosMasApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QXZ-uR-dmh">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SomosMas_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Ob5-Za-aAq">
+                                <rect key="frame" x="0.0" y="38" width="300" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="MWQ-T9-TvI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhb-l4-Qb5">
+                                <rect key="frame" x="10" y="10" width="280" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="ZB0-XU-NUS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOQ-QD-o8S">
+                                <rect key="frame" x="10" y="148" width="280" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DOQ-QD-o8S" firstAttribute="centerX" secondItem="QXZ-uR-dmh" secondAttribute="centerX" id="GCv-4d-p25"/>
+                            <constraint firstItem="Ob5-Za-aAq" firstAttribute="top" secondItem="uhb-l4-Qb5" secondAttribute="bottom" constant="10" id="HIF-B8-65t"/>
+                            <constraint firstAttribute="trailing" secondItem="Ob5-Za-aAq" secondAttribute="trailing" id="V82-Jk-Qd6"/>
+                            <constraint firstItem="DOQ-QD-o8S" firstAttribute="top" secondItem="Ob5-Za-aAq" secondAttribute="bottom" constant="10" id="VGg-FX-5Bf"/>
+                            <constraint firstItem="Ob5-Za-aAq" firstAttribute="leading" secondItem="QXZ-uR-dmh" secondAttribute="leading" id="X9Y-N9-Zgr"/>
+                            <constraint firstItem="uhb-l4-Qb5" firstAttribute="leading" secondItem="QXZ-uR-dmh" secondAttribute="leading" constant="10" id="ezn-v3-J5T"/>
+                            <constraint firstItem="DOQ-QD-o8S" firstAttribute="width" secondItem="uhb-l4-Qb5" secondAttribute="width" id="hpA-yq-THB"/>
+                            <constraint firstItem="uhb-l4-Qb5" firstAttribute="top" secondItem="QXZ-uR-dmh" secondAttribute="top" constant="10" id="iiD-4O-ujb"/>
+                            <constraint firstItem="Ob5-Za-aAq" firstAttribute="top" secondItem="uhb-l4-Qb5" secondAttribute="bottom" constant="10" id="u5q-v3-DWq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="QXZ-uR-dmh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2JX-ok-I4P"/>
+                <constraint firstAttribute="bottom" secondItem="QXZ-uR-dmh" secondAttribute="bottom" id="DHw-oh-bAi"/>
+                <constraint firstItem="QXZ-uR-dmh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="T70-Kk-XkT"/>
+                <constraint firstAttribute="trailing" secondItem="QXZ-uR-dmh" secondAttribute="trailing" id="uBC-no-CF5"/>
+            </constraints>
+            <size key="customSize" width="307" height="190"/>
+            <connections>
+                <outlet property="newsImage" destination="Ob5-Za-aAq" id="meZ-Gc-aCK"/>
+                <outlet property="newsInfo" destination="DOQ-QD-o8S" id="Sr4-SF-WL4"/>
+                <outlet property="newsTitle" destination="uhb-l4-Qb5" id="clh-aP-b19"/>
+            </connections>
+            <point key="canvasLocation" x="323.1884057971015" y="142.63392857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="SomosMas_Logo" width="1800" height="1200"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
